@@ -3,8 +3,8 @@
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
         <Nullable>enable</Nullable>
-        <AssemblyName>DemonLordModTemplate</AssemblyName>
-        <RootNamespace>DemonLordModTemplate</RootNamespace>
+        <AssemblyName>CodeModTemplate</AssemblyName>
+        <RootNamespace>CodeModTemplate</RootNamespace>
         <OutputType>Library</OutputType>
     </PropertyGroup>
 
