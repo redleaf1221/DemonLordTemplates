@@ -3,14 +3,13 @@
         <ModOutputPath>$(MSBuildProjectDirectory)\out\CodeModTemplate</ModOutputPath>
     </PropertyGroup>
     
-    <Target Name="EnsureEmptyDirectories" BeforeTargets="CopyFilesToOutputDirectory">
-        <MakeDir Directories="$(OutputPath)UnitSprites" Condition="!Exists('$(OutputPath)UnitSprites')" />
-    </Target>
-    
     <Target Name="PrepareModOutput" AfterTargets="CopyFilesToOutputDirectory">
         <RemoveDir Directories="$(ModOutputPath)" Condition="Exists('$(ModOutputPath)')" />
         <MakeDir Directories="$(ModOutputPath)" />
-        <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ModOutputPath)\CodeMods" />
+        <ItemGroup>
+            <ModDlls Include="$(TargetDir)*.dll" />
+        </ItemGroup>
+        <Copy SourceFiles="@(ModDlls)" DestinationFolder="$(ModOutputPath)\CodeMods" />
         <ItemGroup>
             <AssetsToCopy Include="assets\**\*" />
         </ItemGroup>

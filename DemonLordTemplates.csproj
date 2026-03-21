@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <PackageId>DemonLord.Templates</PackageId>
     <Title>DemonLord:JustABlock Mod Templates</Title>
     <Authors>MathTangent</Authors>
