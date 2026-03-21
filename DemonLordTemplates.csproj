@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageId>DemonLord.Templates</PackageId>
+    <Title>DemonLord:JustABlock Mod Templates</Title>
+    <Authors>MathTangent</Authors>
+    <Description>Templates to use when creating a mod for DemonLord:JustABlock.</Description>
+    <PackageTags>dotnet-new;templates</PackageTags>
+    <TargetFramework>netstandard2.1</TargetFramework>
+
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>

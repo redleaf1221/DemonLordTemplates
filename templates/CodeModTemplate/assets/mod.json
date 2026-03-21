@@ -1,0 +1,6 @@
+﻿{
+  "title": "{{ModTitle}}",
+  "description": "{{ModDescription}}",
+  "author": "{{ModAuthor}}",
+  "version": "{{ModVersion}}"
+}

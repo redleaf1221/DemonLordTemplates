@@ -1,0 +1,4 @@
+﻿{
+  "dll": "CodeModTemplate.dll",
+  "entryClass": "CodeModTemplate.Main"
+}

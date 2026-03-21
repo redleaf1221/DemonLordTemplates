@@ -1,0 +1,50 @@
+﻿{
+  "$schema": "https://json.schemastore.org/template",
+  "author": "MathTangent",
+  "classifications": [],
+  "identity": "DemonLord.Templates.CodeMod",
+  "name": "DemonLord Code Mod Template",
+  "shortName": "demoncodemod",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "CodeModTemplate",
+  "symbols": {
+    "ModTitle": {
+      "type": "parameter",
+      "datatype": "string",
+      "description": "Mod Title",
+      "replaces": "{{ModTitle}}",
+      "defaultValue": "My Mod"
+    },
+    "ModAuthor": {
+      "type": "parameter",
+      "datatype": "string",
+      "description": "Author",
+      "replaces": "{{ModAuthor}}",
+      "defaultValue": "Me"
+    },
+    "ModDescription": {
+      "type": "parameter",
+      "datatype": "string",
+      "description": "Mod Description",
+      "replaces": "{{ModDescription}}",
+      "defaultValue": "An awesome mod"
+    },
+    "ModVersion": {
+      "type": "parameter",
+      "datatype": "string",
+      "description": "Version",
+      "replaces": "{{ModVersion}}",
+      "defaultValue": "1.0.0"
+    },
+    "GameDirectory": {
+      "type": "parameter",
+      "datatype": "string",
+      "description": "Path to game install (with suffix \\)",
+      "replaces": "{{GameDirectory}}",
+      "isRequired": true
+    }
+  }
+}

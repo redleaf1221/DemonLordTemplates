@@ -1,0 +1,22 @@
+﻿<Project>
+    <PropertyGroup>
+        <ModOutputPath>$(MSBuildProjectDirectory)\out\CodeModTemplate</ModOutputPath>
+    </PropertyGroup>
+    
+    <Target Name="EnsureEmptyDirectories" BeforeTargets="CopyFilesToOutputDirectory">
+        <MakeDir Directories="$(OutputPath)UnitSprites" Condition="!Exists('$(OutputPath)UnitSprites')" />
+    </Target>
+    
+    <Target Name="PrepareModOutput" AfterTargets="CopyFilesToOutputDirectory">
+        <RemoveDir Directories="$(ModOutputPath)" Condition="Exists('$(ModOutputPath)')" />
+        <MakeDir Directories="$(ModOutputPath)" />
+        <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ModOutputPath)\CodeMods" />
+        <ItemGroup>
+            <AssetsToCopy Include="assets\**\*" />
+        </ItemGroup>
+        <Copy SourceFiles="@(AssetsToCopy)"
+              DestinationFiles="@(AssetsToCopy->'$(ModOutputPath)\%(RecursiveDir)%(Filename)%(Extension)')"
+              SkipUnchangedFiles="true" />
+        <Message Importance="high" Text="Mod file copied." />
+    </Target>
+</Project>
