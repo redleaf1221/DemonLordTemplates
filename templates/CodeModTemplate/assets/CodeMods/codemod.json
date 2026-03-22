@@ -1,4 +1,5 @@
 ﻿{
   "dll": "CodeModTemplate.dll",
-  "entryClass": "CodeModTemplate.Main"
+  "entryClass": "CodeModTemplate.CodeModTemplate",
+  "displayName": "{{ModTitle}}"
 }

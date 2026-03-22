@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.1</PackageVersion>
+    <PackageVersion>1.0.2</PackageVersion>
     <PackageId>DemonLord.Templates</PackageId>
     <Title>DemonLord:JustABlock Mod Templates</Title>
     <Authors>MathTangent</Authors>
@@ -14,6 +14,7 @@
     <NoDefaultExcludes>true</NoDefaultExcludes>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
+    <PackageProjectUrl>https://github.com/redleaf1221/DemonLordTemplates</PackageProjectUrl>
 
   </PropertyGroup>
 
